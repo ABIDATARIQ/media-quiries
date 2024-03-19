@@ -1,0 +1,40 @@
+*{ 
+    margin: 0;
+    padding: 0;
+}
+
+.nav{ 
+    background-color: aqua;
+    width: 100%;
+    height:70px;
+    display: flex; 
+    align-items: center;
+    justify-content: right;
+
+}
+.nav-item{ 
+    margin-right: 20px;
+}
+img{ 
+    width:20px ;
+    height:20px ;
+}
+
+@media  screen and (max-width:400px) {
+    .nav-item{ 
+        display: none;
+    }
+    img{ 
+        display: block;
+    }
+    
+}
+@media screen and (min-width:301px) {
+    .nav-item{ 
+        display: flex; 
+    }
+    img { 
+        display: none;
+    }
+    
+}
